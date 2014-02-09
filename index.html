@@ -4,7 +4,7 @@
 
 
 
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/LocalBusiness">
 
 
 
@@ -18,7 +18,7 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700italic,900italic' rel='stylesheet' type='text/css'>
 
-	<title>Zero Gravity Institute</title>
+	<title itemprop="name">Zero Gravity Institute</title>
 
 
 
@@ -33,10 +33,12 @@
 	<div id="header">
 		<div id="main-banner">
 			<a href="index.html"><h1 id="page-title"><span id="zero">Zero</span><span id="gravity">Gravity</span><span id="institute">Institute</span></h1></a>
-			<div id="address">
-				<li>2919 Manchaca Rd Suite 105A</li>
-				<li>Austin, TX 78704</li>
-				<li>512-707-1191</li>
+			<div id="address-container">
+				<div id="address" itemprop="address" itemscope itemtype="http://schema.org/Address">
+					<li><a itemprop="maps" href="https://www.google.com/maps/preview/place/ZERO+GRAVITY+INSTITUTE/@30.2421676,-97.7816807,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x9989b23cf188e3fd" target="_blank"><span itemprop="streetAddress">2919 Manchaca Rd Suite 105A</span></a></li>
+					<li><span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">78704</span></li>
+					<li>512-707-1191</li>
+				</div>
 			</div>
 		</div>
 		<div id="navigation">

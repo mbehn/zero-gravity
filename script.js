@@ -8,7 +8,7 @@ function preparePage() {
 }
 
 var showAddress = function() {
-	var address = document.getElementById("address");
+	var address = document.getElementById("address-container");
 	address.style.opacity="1";
 }
 

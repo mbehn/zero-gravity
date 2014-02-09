@@ -2,7 +2,7 @@ function preparePage() {
 
 	var floatTitle = function() {
 	var title = document.getElementById("page-title");
-	title.style.top="30px";
+	title.style.top="50px";
 	title.style.opacity="1";
 	title.style.letterSpacing="5px";
 }

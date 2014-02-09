@@ -4,6 +4,7 @@ function preparePage() {
 	var title = document.getElementById("page-title");
 	title.style.top="30px";
 	title.style.opacity="1";
+	title.style.letterSpacing="5px";
 }
 
 var showAddress = function() {

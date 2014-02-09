@@ -67,7 +67,8 @@ a {
 }
 
 #main-banner {
-	background-image:url(assets/images/header.jpeg);
+	background-image:url(assets/images/header.jpg);
+	background-size: 100%;
 	height:300px;
 	position:relative;
 }
@@ -145,4 +146,6 @@ a {
 	color:white;
 }	
 
-
+#url {
+	display:none;
+}

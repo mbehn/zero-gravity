@@ -62,11 +62,13 @@ a {
 	height: 2000px;
 	margin: 0 auto;
 	background-color: white;
-	box-shadow: 0 0 200px -10px;
+	box-shadow: 0 0 300px -70px;
 	border-radius: 5px;
 }
 #header {
 	position:relative;
+	background-color: #0099CC;
+	border-radius: 0 0 4px 4px;
 }
 
 #main-banner {
@@ -74,6 +76,7 @@ a {
 	background-size: 100%;
 	height:300px;
 	position:relative;
+	border-radius: 0 0 4px 4px;
 }
 
 #page-title {
@@ -89,7 +92,7 @@ a {
 
 #zero, #gravity, #institute, #address li {
 	font-family: 'Lato', sans-serif;
-	color:black;
+	color:white;
 }
 
 #zero, #institute {
@@ -104,7 +107,7 @@ a {
 #address-container {
 	opacity:0;
 	position: absolute;
-	bottom: 50px;
+	bottom: 75px;
 	right: 100px;
 	transition: all 1.5s;
 	background: rgba(255, 255, 255, 0.15);
@@ -122,11 +125,7 @@ a {
 
 #address a {
 	text-decoration: underline;
-	color:gray;
-}
-
-#maps-popout {
-	float:right;
+	color:#DEDEDE;
 }
 
 #map-icon img {
@@ -155,11 +154,11 @@ nav {
 }
 
 #navigation a {
-	color: black;
+	color: #DEDEDE;
 	font-family: 'Lato',sans-serif;
 	font-size: 24px;
 	font-weight: 300;
-	padding: 0 10px;
+	padding: 15px 10px;
 	transition: all 0.5s ease 0s;
 	border-bottom-right-radius: 1px;
 	border-bottom-left-radius: 1px;
@@ -178,6 +177,7 @@ nav {
 }
 
 #maps-popout {
+	float:right;
     opacity: 0;
     position: absolute;
     right: 20px;
@@ -187,7 +187,7 @@ nav {
 }
 
 li#maps-popout {
-	color:#66CCFF;
+	color:white;
 }
 
 #bottom-address li {

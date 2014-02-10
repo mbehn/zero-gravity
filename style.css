@@ -105,7 +105,7 @@ a {
 	opacity:0;
 	position: absolute;
 	bottom: 50px;
-	right: 50px;
+	right: 100px;
 	transition: all 1.5s;
 	background: rgba(255, 255, 255, 0.15);
 }
@@ -130,11 +130,10 @@ a {
 }
 
 #map-icon img {
-	width:35px;
+	width:20px;
 }
 
 #navigation {
-	opacity:0;
 	margin-left: 20px;
 }
 
@@ -152,11 +151,11 @@ nav {
 }
 
 #navigation li:hover {
-	background-color:#003399;
+	background-color:#66CCFF;
 }
 
 #navigation a {
-	color: #000000;
+	color: black;
 	font-family: 'Lato',sans-serif;
 	font-size: 24px;
 	font-weight: 300;
@@ -179,6 +178,18 @@ nav {
 }
 
 #maps-popout {
-	opacity:0;
-	transition:all .5s;
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 2px;
+    transition:all .3s;
+    font-size: 12px;
+}
+
+li#maps-popout {
+	color:#66CCFF;
+}
+
+#bottom-address li {
+	text-align:right;
 }

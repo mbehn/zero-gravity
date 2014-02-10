@@ -10,6 +10,7 @@ function preparePage() {
 var showAddress = function() {
 	var address = document.getElementById("address-container");
 	address.style.opacity="1";
+	address.style.right="50px";
 }
 
 

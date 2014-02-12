@@ -13,7 +13,9 @@
 
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta property="og:image" content="http://mbehn.com/zginstitute/assets/images/facebookOG.jpg"/>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 	<link rel='shortcut icon' href='favicon.jpg' /><link rel='icon' href='http://www.zerogravityinstitute.com/favicon.jpg' />
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -36,8 +38,8 @@
 			<a href="http://mbehn.com/zginstitute"><h1 id="page-title"><span id="zero">Zero</span><span id="gravity">Gravity</span><span id="institute">Institute</span></h1></a>
 			<div id="address-container">
 				<div id="address" itemprop="address" itemscope itemtype="http://schema.org/Address">
-					<li id="maps-popout">open in google maps <span id="map-icon"><img src="assets/images/mapicon.png"></span></li>
-					<div id="bottom-address"><li id="map" onmouseover="mapsPopout()" onmouseout="popoutHide()"><a itemprop="maps" href="https://www.google.com/maps/preview/place/ZERO+GRAVITY+INSTITUTE/@30.2421676,-97.7816807,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x9989b23cf188e3fd" target="_blank"><span itemprop="streetAddress">2919 Manchaca Rd Suite 105A</span></a></li>
+					<li id="maps-popout">open in google maps</li>
+					<div id="bottom-address"><li id="map" onmouseover="mapsPopout()" onmouseout="popoutHide()"><a itemprop="maps" href="https://www.google.com/maps/preview/place/ZERO+GRAVITY+INSTITUTE/@30.2421676,-97.7816807,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x9989b23cf188e3fd" target="_blank"><span itemprop="streetAddress">2919 Manchaca Rd Suite 105A</span></a>&nbsp;<span id="map-icon"><img src="assets/images/mapicon.png"/></span></li>
 										<li><span itemprop="addressLocality">Austin</span>, <span itemprop="addressRegion">TX</span> <span itemprop="postalCode">78704</span></li>
 										<li><span itemprop="telephone">512-707-1191</span></li><li itemprop="url" id="url">http://mbehn.com/zginstitute/</li></div>
 				</div>
@@ -60,10 +62,6 @@
 	<div id="footer">
 	</div>
 
-</div></div>
-<script type="text/javascript">
-</script>
-<script type="text/javascript" src="script.js"></script>
 <script type="text/javascript">
 var mapsPopout = function() {
 	document.getElementById("maps-popout").style.opacity="1";
@@ -73,6 +71,7 @@ var popoutHide = function(){
 	document.getElementById("maps-popout").style.opacity="0";
 }
 </script>
+
 </body>
 
 

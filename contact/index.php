@@ -16,11 +16,25 @@
 	<meta property="og:image" content="http://mbehn.com/zginstitute/assets/images/facebookOG.jpg"/>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<link rel='shortcut icon' href='favicon.jpg' /><link rel='icon' href='http://www.zerogravityinstitute.com/favicon.jpg' />
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700italic,900italic' rel='stylesheet' type='text/css'>
 
 	<title itemprop="name">Zero Gravity Institute &reg;</title>
+
+	<style type="text/css">
+		#page-title {
+			opacity: 1;
+			top:50px;
+			letter-spacing: 5px;
+		}
+
+		#address-container {
+			right:50px;
+			opacity: 1;
+		}
+
+	</style>
 
 
 
@@ -34,7 +48,7 @@
 	<div id="container">
 	<div id="header">
 		<div id="main-banner">
-			<a href="http://mbehn.com/zginstitute"><h1 id="page-title"><span id="zero">Zero</span><span id="gravity">Gravity</span><span id="institute">Institute</span></h1></a>
+			<a href="../index.php"><h1 id="page-title"><span id="zero">Zero</span><span id="gravity">Gravity</span><span id="institute">Institute</span></h1></a>
 			<div id="address-container">
 				<div id="address" itemprop="address" itemscope itemtype="http://schema.org/Address">
 					<li id="maps-popout">open in google maps</li>
@@ -48,27 +62,55 @@
 			<nav>
 				<ul>
 					<li id="intro"><a href="#">intro to floating</a></li>
-					<li><a href="contact/index.php">book an appointment</a></li>
+					<li><a href="contact.php">book an appointment</a></li>
 					<li><a href="#">rates & discounts</a></li>
 					<li><a href="#">media gallery</a></li>
 					<li><a href="#">before you float</a></li>
 				</ul>
 			</nav>
-			<div id="sub-menu-1">
+			<!-- <div id="sub-menu-1">
 				<ul>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div id="main-content">
+		<h1 id="contact-header">Book an Appointment Today!</h1>
+		<form id="appointment-form">
+			<div id="first-name">
+				<label>First Name</label>
+				<input type="text">
+			</div>
+			<div id="last-name">
+				<label>Last Name</label>
+				<input type="text">
+			</div>
+			<div id="email">
+				<label>Email Address</label>
+				<input type="text">
+			</div>
+
+			<div id="telephone">
+				<label>Telephone</label>
+				<input type="tel">
+			</div>
+			<div id="day">
+				<label>Preferred Date</label>
+				<input type="date">
+			</div>
+
+
+
+		</form>
 	</div>
 	<div id="footer">
 	</div>
-<script type="text/javascript" src="script.js"></script>
+	<!-- don't need to have title float on every page -->
+<!-- <script type="text/javascript" src="script.js"></script> -->
 <script type="text/javascript">
 var mapsPopout = function() {
 	document.getElementById("maps-popout").style.opacity="1";

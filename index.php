@@ -48,20 +48,20 @@
 			<nav>
 				<ul>
 					<li id="intro"><a href="#">intro to floating</a></li>
-					<li><a href="contact/index.php">book an appointment</a></li>
+					<li><a href="contact/">book an appointment</a></li>
 					<li><a href="#">rates & discounts</a></li>
 					<li><a href="#">media gallery</a></li>
 					<li><a href="#">before you float</a></li>
 				</ul>
 			</nav>
-			<div id="sub-menu-1">
+<!-- 			<div id="sub-menu-1">
 				<ul>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 					<li><a class="sub-menu-item" href="#">test</a></li>
 				</ul>
-			</div>
+			</div> -->
 		</div>
 	</div>
 	<div id="main-content">

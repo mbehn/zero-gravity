@@ -64,6 +64,7 @@ a {
 	background-color: white;
 	box-shadow: 0 0 300px -110px;
 	border-radius: 5px;
+	font-family: 'Lato', sans-serif;
 }
 #header {
 	position:relative;
@@ -234,27 +235,49 @@ li#maps-popout {
 }
 
 #contact-header {
-	width:300px;
-	margin:10px auto 0 auto;
+	text-align: center;
+	width: auto;
+	margin: 20px auto 0 auto;
+	font-weight: 100;
+	letter-spacing: 2px;
+	font-size: 40px;
 }
+
 
 #appointment-form {
 	margin:0 auto;
-	width:300px;
+	width:500px;
 	position:relative;
 	top:20px;
 }
 
-#appointment-form input, textarea {
-	position:absolute;
-	right:0px;
+#appointment-form input, #appointment-form textarea {
+	position: absolute;
+	right: 0px;
 	border-style: none;
-	border: 1px solid black;
-	border-radius: 3px;
-	line-height: 18px;
-	width:150px;
+	border-bottom: 1px solid black;
+	width: 215px;
+	height: 30px;
+	font-size: 22px;
+	padding-left: 6px;
+	transition:all .3s;
+}
+
+#appointment-form input:focus {
+	background-color:#0099CC;
+	color:white;
 }
 
 #appointment-form div {
 	margin: 0 0 10px 0;
 }
+
+#appointment-form div label {
+	font-size: 34px;
+	font-weight: 100;
+}
+
+
+
+
+

@@ -13,9 +13,11 @@ var showAddress = function() {
 	address.style.right="50px";
 }
 
-
 var timeout = setTimeout(floatTitle,100);
 var timoutAddress = setTimeout(showAddress,1500);
-
 }
+
+
 preparePage();
+
+

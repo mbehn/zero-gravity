@@ -17,6 +17,7 @@
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<link rel='shortcut icon' href='favicon.jpg' /><link rel='icon' href='http://www.zerogravityinstitute.com/favicon.jpg' />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slider.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700italic,900italic' rel='stylesheet' type='text/css'>
 
@@ -54,17 +55,23 @@
 					<li><a href="#">before you float</a></li>
 				</ul>
 			</nav>
-<!-- 			<div id="sub-menu-1">
-				<ul>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-				</ul>
-			</div> -->
 		</div>
 	</div>
 	<div id="main-content">
+		<div id="slider-header">
+				<h1>Slider Practice</h1>
+		</div>
+		<div id="slider">
+			<div id="slider-image-wrapper">
+				<div id="slide-left" class="slider-nav"><a href="#"><</a></div>
+				<div id="slide-right" class="slider-nav"><a href="#">></a></div>
+				<div id="slider-images">
+					<img class="slider-images" src="assets/images/slider-images/slide-1.jpeg">
+					<img class="slider-images" src="assets/images/slider-images/slide-2.jpeg">
+					<img class="slider-images" src="assets/images/slider-images/slide-3.jpeg">
+				</div>
+			</div>
+		</div>
 	</div>
 	<div id="footer">
 	</div>
@@ -76,6 +83,50 @@ var mapsPopout = function() {
 
 var popoutHide = function(){
 	document.getElementById("maps-popout").style.opacity="0";
+}
+
+var slider = {
+	setInitialImage : function() {
+		var images = document.getElementsByClassName("slider-images");
+		images[0].style.opacity="1";
+	},
+	images : document.getElementsByClassName("slider-images"),
+	startSlider : setTimeout(function() {
+			for (var i = 0;i<slider.images.length;i++) {
+				currentImage = slider.images[i];
+				if (i===0) {
+					currentImage.style.opacity="1";
+				} else if (i===1) {
+					slider.images[0].opacity="0";
+					slider.images[i].opacity="1";
+				} 
+			}
+		},4000),
+	showNav :  function() {
+		document.getElementById("slide-left").style.opacity="1";
+		document.getElementById("slide-right").style.opacity="1";
+		document.getElementById("slide-left").style.left="3px";
+		document.getElementById("slide-right").style.right="3px";
+
+	},
+	hideNav : function() {
+		document.getElementById("slide-left").style.opacity="0";
+		document.getElementById("slide-right").style.opacity="0";
+		document.getElementById("slide-left").style.left="10px";
+		document.getElementById("slide-right").style.right="10px";
+	}
+
+}
+
+slider.setInitialImage();
+slider.startSlider;
+var navs = document.getElementById("slider");
+navs.onmouseover = function() {
+	slider.showNav();
+}
+
+navs.onmouseout = function() {
+	slider.hideNav();
 }
 
 </script>

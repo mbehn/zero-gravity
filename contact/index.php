@@ -68,14 +68,6 @@
 					<li><a href="#">before you float</a></li>
 				</ul>
 			</nav>
-			<!-- <div id="sub-menu-1">
-				<ul>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-					<li><a class="sub-menu-item" href="#">test</a></li>
-				</ul>
-			</div> -->
 		</div>
 	</div>
 	<div id="main-content">
@@ -83,20 +75,20 @@
 		<form id="appointment-form">
 			<div id="first-name">
 				<label>First Name</label>
-				<input type="text">
+				<input type="text" maxlength="20">
 			</div>
-			<div id="last-name">
+			<div id="last-name" maxlength="20">
 				<label>Last Name</label>
 				<input type="text">
 			</div>
 			<div id="email">
 				<label>Email Address</label>
-				<input type="text">
+				<input type="email">
 			</div>
 
 			<div id="telephone">
 				<label>Telephone</label>
-				<input type="tel">
+				<input type="tel" id="telephone-number">
 			</div>
 			<div id="day">
 				<label>Preferred Date</label>
@@ -119,6 +111,30 @@ var mapsPopout = function() {
 var popoutHide = function(){
 	document.getElementById("maps-popout").style.opacity="0";
 }
+
+// document.getElementById("telephone-number").onblur = function(){
+// 	var telephone = document.getElementById("telephone-number");
+// 	if (telephone.value.length === 10) {
+// 		var splitTelephone = telephone.value.split("");
+// 		console.log(splitTelephone.length)
+// 		telephone.value = "(" + splitTelephone[0] + splitTelephone[1] + splitTelephone[2] + ")-"+  splitTelephone[3] + splitTelephone[4] + splitTelephone[5] + "-" +  splitTelephone[6] + splitTelephone[7] + splitTelephone[8] + splitTelephone[9];
+// 	} else {
+// 		console.log("Telephone not long enough or too long")
+// 	}
+// };
+
+document.getElementById("telephone-number").oninput = function(){
+	if (splitTelephone.length === 3) { 
+		var firstTel = "(" + splitTelephone[0] + splitTelephone[1] + splitTelephone[2] + ")-";
+		splitTelephone = firstTel.split('');
+		telephone.value = firstTel.toString();
+		console.log(splitTelephone)
+		console.log(splitTelephone.length)
+		return splitTelephone;
+	} 
+};
+
+
 
 </script>
 

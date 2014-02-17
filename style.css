@@ -264,7 +264,7 @@ li#maps-popout {
 }
 
 #appointment-form input:focus {
-	background-color:#0099CC;
+	background-color:#66CCFF;
 	color:white;
 }
 
@@ -276,8 +276,6 @@ li#maps-popout {
 	font-size: 34px;
 	font-weight: 100;
 }
-
-
 
 
 

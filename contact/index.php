@@ -63,7 +63,7 @@
 			<nav>
 				<ul>
 					<li id="intro"><a href="#">intro to floating</a></li>
-					<li><a href="../contact">book an appointment</a></li>
+					<li id="active-page"><a href="../contact">book an appointment</a></li>
 					<li><a href="#">rates & discounts</a></li>
 					<li><a href="../gallery/">media gallery</a></li>
 					<li><a href="#">before you float</a></li>
@@ -145,11 +145,13 @@ document.getElementById("telephone-number").oninput = function(){
 			opacity: 1;
 			top:50px;
 			letter-spacing: 5px;
+			transition:none;
 		}
 
 		#address-container {
 			right:50px;
 			opacity: 1;
+			transition:none;
 		}
 
 	</style>

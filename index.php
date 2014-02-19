@@ -27,7 +27,7 @@
                         <div id="navigation">
                             <nav>
                                 <ul>
-                                    <li id="intro"><a href="#">intro to floating</a></li>
+                                    <li class="active-page"><a href="#">intro to floating</a></li>
                                     <li><a href="contact/">book an appointment</a></li>
                                     <li><a href="#">rates & discounts</a></li>
                                     <li><a href="gallery/">media gallery</a></li>

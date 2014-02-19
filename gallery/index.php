@@ -42,7 +42,7 @@
 					<li id="intro"><a href="#">intro to floating</a></li>
 					<li><a href="../contact">book an appointment</a></li>
 					<li><a href="#">rates & discounts</a></li>
-					<li><a href="../gallery/">media gallery</a></li>
+					<li id="active-page"><a href="../gallery/">media gallery</a></li>
 					<li><a href="#">before you float</a></li>
 				</ul>
 			</nav>

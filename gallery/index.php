@@ -14,20 +14,6 @@
 
 	<title itemprop="name">Zero Gravity Institute &reg;</title>
 
-	<style type="text/css">
-		#page-title {
-			opacity: 1;
-			top:50px;
-			letter-spacing: 5px;
-		}
-
-		#address-container {
-			right:50px;
-			opacity: 1;
-		}
-
-	</style>
-
 
 
 </head>
@@ -115,7 +101,6 @@
 	</div>
 	<div id="footer">
 	</div>
-<script type="text/javascript" src="../script.js"></script>
 <script type="text/javascript">
 var mapsPopout = function() {
 	document.getElementById("maps-popout").style.opacity="1";
@@ -128,7 +113,24 @@ var popoutHide = function(){
 </script>
 
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="../style.css">
+	<style type="text/css">
+		#page-title {
+			opacity: 1;
+			top:50px;
+			letter-spacing: 5px;
+			transition:none;
+		}
+
+		#address-container {
+			right:50px;
+			opacity: 1;
+			transition:none;
+		}
+
+	</style>
+
 
 </body>
 

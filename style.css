@@ -280,15 +280,16 @@ li#maps-popout {
 #carousel-example-generic {
   width:800px;
   margin:0 auto;
-  box-shadow: 0 10px 30px;
+  box-shadow: 0 0 45px 5px;
 }
 
 #slider-header {
-width: 700px;
-margin: 0 auto;
-font-size: 24px;
-font-weight: 100;
-text-align: center;
-margin-top: 15px;
+	width: 700px;
+	margin: 0 auto;
+	font-size: 24px;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
 }
 

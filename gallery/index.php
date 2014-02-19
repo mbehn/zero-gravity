@@ -1,13 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-
-        "http://www.w3.org/TR/html4/loose.dtd">
-
-
-
-<html lang="en" itemscope itemtype="http://schema.org/LocalBusiness">
-
-
-
 <head>
 
 
@@ -16,9 +6,10 @@
 	<meta property="og:image" content="http://mbehn.com/zginstitute/assets/images/facebookOG.jpg"/>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<link rel='shortcut icon' href='favicon.jpg' /><link rel='icon' href='http://www.zerogravityinstitute.com/favicon.jpg' />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../slider.css"> -->
 
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700italic,900italic' rel='stylesheet' type='text/css'>
 
 	<title itemprop="name">Zero Gravity Institute &reg;</title>
@@ -72,38 +63,59 @@
 		</div>
 	</div>
 	<div id="main-content">
-		<h1 id="contact-header">Book an Appointment Today!</h1>
-		<form id="appointment-form">
-			<div id="first-name">
-				<label>First Name</label>
-				<input type="text" maxlength="20">
-			</div>
-			<div id="last-name" maxlength="20">
-				<label>Last Name</label>
-				<input type="text">
-			</div>
-			<div id="email">
-				<label>Email Address</label>
-				<input type="email">
-			</div>
+		<div id="slider-header">
+				<h1>Slider Practice</h1>
+		</div>
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			  </ol>
 
-			<div id="telephone">
-				<label>Telephone</label>
-				<input type="tel" id="telephone-number">
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    <div class="item active">
+			      <img src="../assets/images/slider-images/slide-1.jpeg" alt="image 1">
+					<div class="carousel-caption">
+			        	<h4>Image 1</h4>
+			        	
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="../assets/images/slider-images/slide-2.jpeg" alt="image 2">
+					<div class="carousel-caption">
+			        	<h4>Image 2</h4>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="../assets/images/slider-images/slide-3.jpeg" alt="image 3">
+					<div class="carousel-caption">
+			       		<h4>Image 3</h4>
+			      </div>
+			    </div>
+			    <div class="item">
+			      <img src="../assets/images/slider-images/slide-2.jpeg" alt="image 4">
+					<div class="carousel-caption">
+			        	<h4>Image 4</h4>
+			      </div>
+			    </div>
+			  </div>
+
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right"></span>
+			  </a>
 			</div>
-			<div id="day">
-				<label>Preferred Date</label>
-				<input type="date">
-			</div>
-
-
-
-		</form>
 	</div>
 	<div id="footer">
 	</div>
-	<!-- don't need to have title float on every page -->
-<!-- <script type="text/javascript" src="script.js"></script> -->
+<script type="text/javascript" src="../script.js"></script>
 <script type="text/javascript">
 var mapsPopout = function() {
 	document.getElementById("maps-popout").style.opacity="1";
@@ -113,31 +125,10 @@ var popoutHide = function(){
 	document.getElementById("maps-popout").style.opacity="0";
 }
 
-// document.getElementById("telephone-number").onblur = function(){
-// 	var telephone = document.getElementById("telephone-number");
-// 	if (telephone.value.length === 10) {
-// 		var splitTelephone = telephone.value.split("");
-// 		console.log(splitTelephone.length)
-// 		telephone.value = "(" + splitTelephone[0] + splitTelephone[1] + splitTelephone[2] + ")-"+  splitTelephone[3] + splitTelephone[4] + splitTelephone[5] + "-" +  splitTelephone[6] + splitTelephone[7] + splitTelephone[8] + splitTelephone[9];
-// 	} else {
-// 		console.log("Telephone not long enough or too long")
-// 	}
-// };
-
-document.getElementById("telephone-number").oninput = function(){
-	if (splitTelephone.length === 3) { 
-		var firstTel = "(" + splitTelephone[0] + splitTelephone[1] + splitTelephone[2] + ")-";
-		splitTelephone = firstTel.split('');
-		telephone.value = firstTel.toString();
-		console.log(splitTelephone)
-		console.log(splitTelephone.length)
-		return splitTelephone;
-	} 
-};
-
-
-
 </script>
+
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
 
 </body>
 
